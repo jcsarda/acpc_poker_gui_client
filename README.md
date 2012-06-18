@@ -13,7 +13,7 @@ Obviously, to serve a web page at all, an Apache server must be running and it m
 Application Control Flow
 ----------------------------
 
-When the user's browser is directed to the address of this application, a request is sent to Rails, which looks in `config/routes.rb` for root :to => 'new_game#index'. This routes the application's root address to the `index` _action_ of `NewGameController`.  Control moves into the `index` method of `NewGameController`.  When it drops out of `index`, Rails implicitly renders a _template_ with the same name in the `new_game` directory--`index.html.haml`, in this case.  This template sets up the application's page and renders the <em>partial template</em>, `_index.html.haml`.  `_index.html.haml` presents the initial form to the user.
+When the user's browser is directed to the address of this application, a request is sent to Rails, which looks in `config/routes.rb` for `root :to => 'new_game#index'`. This routes the application's root address to the `index` _action_ of `NewGameController`.  Control moves into the `index` method of `NewGameController`.  When it drops out of `index`, Rails implicitly renders a _template_ with the same name in the `new_game` directory--`index.html.haml`, in this case.  This template sets up the application's page and renders the <em>partial template</em>, `_index.html.haml`.  `_index.html.haml` presents the initial form to the user.
 
 Match Control Flow
 ---------------------
