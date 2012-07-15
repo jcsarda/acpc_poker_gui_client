@@ -24,7 +24,14 @@ Prerequisites
 ----------------
 * Ruby 1.9.3 - This can be installed in different ways, but a good choice is [RVM](https://rvm.io//). Or you can follow these [instructions](http://www.ruby-lang.org/en/downloads/) to install via a different method.
 * Git - While this should only be required if you want to install Ruby via [RVM](https://rvm.io//), installing Git also makes working with this repository easier, so it is recommended. Follow these [instructions](https://help.github.com/articles/set-up-git#platform-all) to do so.
+* [Bundler][Bundler homepage] - Bundler is a Ruby gem that manages a project's gem dependencies. It requires zlib, which can be installed through [RVM](https://rvm.io//) by running
+    
+        rvm pkg install zlib
+Once Ruby is installed, installing Bundler should only be a matter of running
 
+        gem install bundler
+
+* A non-LLVM version of GCC - This may require some extra steps on OSX as some versions of XCode no longer include such compilers. There are many [discussions on solutions for this on stack overflow](http://stackoverflow.com/questions/8032824/cant-install-ruby-under-lion-with-rvm-gcc-issues).
 
 Installation
 ---------------
@@ -32,11 +39,14 @@ Download [the code][GitHub repo], which can be done by running
 
     git clone git://github.com/dmorrill10/acpc_poker_gui_client.git
 
+Next, download a [<em>MongoDB</em>](http://www.mongodb.org/downloads) version compatible with your system, unpack the compressed file to `<project root>/vendor`, and rename the resulting directory to `mongoDB`.
+
 then, in the project's root directory, run
 
     rake install
 
-This should install all the application's dependencies, except [<em>Apache</em>][Apache homepage], including gems, [<em>Beanstalkd</em>][Beanstalkd homepage], and [<em>MongoDB</em>][MongoDB homepage].
+This should install most of the application's dependencies, except [<em>Apache</em>][Apache homepage], including gems and [<em>Beanstalkd</em>][Beanstalkd homepage], and will complete the MongoDB setup.
+
 
 Non-gem dependencies
 ---------------------------
@@ -72,7 +82,7 @@ Updating this application can be done by running
     rake update
 in the project's root directory, which will pull the newest down code from the [repository][GitHub repo] and install any missing gems.
 
-These tasks can be done separately too (as can all rake tasks, see Rakefile for more details), with [Git](http://git-scm.com/) and [Bundler](http://gembundler.com/) commands.
+These tasks can be done separately too (as can all rake tasks, see Rakefile for more details), with [Git](http://git-scm.com/) and [Bundler][Bundler homepage] commands.
 
 Copyright
 ---------
@@ -89,3 +99,4 @@ Copyright &copy; 2012 by the Computer Poker Research Group, University of Albert
 [MongoDB homepage]: http://www.mongodb.org/
 [Apache homepage]: http://www.apache.org/
 [Phusion Passenger homepage]: http://www.modrails.com/
+[Bundler homepage]: http://gembundler.com/
