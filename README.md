@@ -72,7 +72,7 @@ Updating this application can be done by running
     rake update
 in the project's root directory, which will pull the newest down code from the [repository][GitHub repo] and install any missing gems.
 
-These tasks can be done separately too (as can all rake tasks, see the [Rakefile](Rakefile) for more details), with [Git](http://git-scm.com/) and [Bundler](http://gembundler.com/) commands.
+These tasks can be done separately too (as can all rake tasks, see Rakefile for more details), with [Git](http://git-scm.com/) and [Bundler](http://gembundler.com/) commands.
 
 Copyright
 ---------
