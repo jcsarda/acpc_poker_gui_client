@@ -20,9 +20,19 @@ Much of this application's functionality comes from component gems that began as
 * [ACPC Poker Player Proxy](https://github.com/dmorrill10/acpc_poker_player_proxy) - Provides a full proxy through which a match of poker may be played with the [<em>ACPC Dealer Server</em>][competition server link]. Match states sent by the dealer are retrieved automatically whenever they are available, and are interpreted and managed for the user.
 * [ACPC Poker Types](https://github.com/dmorrill10/acpc_poker_types) - Fundamental poker types like `Card`, `Player`, `GameDefinition`, and `MatchState`.
 
+Prerequisites
+----------------
+* Ruby 1.9.3 - This can be installed in different ways, but a good choice is [RVM](https://rvm.io//). Or you can follow these [instructions](http://www.ruby-lang.org/en/downloads/) to install via a different method.
+* Git - While this should only be required if you want to install Ruby via [RVM](https://rvm.io//), installing Git also makes working with this repository easier, so it is recommended. Follow these [instructions](https://help.github.com/articles/set-up-git#platform-all) to do so.
+
+
 Installation
 ---------------
-Download [the code][GitHub repo] and run
+Download [the code][GitHub repo], which can be done by running
+
+    git clone git://github.com/dmorrill10/acpc_poker_gui_client.git
+
+then, in the project's root directory, run
 
     rake install
 
