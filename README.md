@@ -39,12 +39,40 @@ then, in the project's root directory, run
 This should install all the application's dependencies, except [<em>Apache</em>][Apache homepage], including gems, [<em>Beanstalkd</em>][Beanstalkd homepage], and [<em>MongoDB</em>][MongoDB homepage].
 
 Non-gem dependencies
------------------------
+---------------------------
 The [<em>Beanstalkd background process server</em>][Beanstalkd homepage] is used to host background processes. Background processes are required so that game state can persist beyond a single HTTP request.
 
 [<em>MongoDB</em>][MongoDB homepage] is used as the database back-end.
 
-[<em>Apache server</em>][Apache homepage] hosts the application proper. This is currently done with Apache-Rails integration through [<em>Phusion Passenger</em>][Phusion Passenger homepage].
+Web server
+--------------
+### Development mode
+A Thin server installed via gem serves the application locally in development mode.
+
+### Production mode
+An [<em>Apache server</em>][Apache homepage] hosts the application proper in production mode. This is currently done with Apache-Rails integration through [<em>Phusion Passenger</em>][Phusion Passenger homepage]. As [Apache][Apache homepage] is only used in production, it is not required to deploy this application on a local development server.
+
+Deployment
+------------
+### Development mode
+Deploying the application in development mode on a Thin server is simply a matter of running
+
+    rake start_dev_server
+in the project's root directory.
+
+### Production mode
+Similarly, to deploy in production mode (given that [<em>Apache</em>][Apache homepage] and [<em>Phusion Passenger</em>][Phusion Passenger homepage] are properly configured), run:
+
+    rake start_prod_server
+
+Updates
+---------
+Updating this application can be done by running
+
+    rake update
+in the project's root directory, which will pull the newest down code from the [repository][GitHub repo] and install any missing gems.
+
+These tasks can be done separately too (as can all rake tasks, see the [Rakefile](Rakefile) for more details), with [Git](http://git-scm.com/) and [Bundler](http://gembundler.com/) commands.
 
 Copyright
 ---------
