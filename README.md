@@ -43,6 +43,7 @@ Next, download a [<em>MongoDB</em>](http://www.mongodb.org/downloads) version co
 
 then, in the project's root directory, run
 
+    bundle install
     rake install
 
 This should install most of the application's dependencies, except [<em>Apache</em>][Apache homepage], including gems and [<em>Beanstalkd</em>][Beanstalkd homepage], and will complete the MongoDB setup.
