@@ -110,30 +110,31 @@ Further resources
 ------------------
 
 * [Annual Computer Poker Competition][ACPC homepage]
-* [The Apache Project][Apache homepage] - The production web server used by this project.
 * [Beanstalkd][Beanstalkd homepage] - The background process server used by this project.
+* [Coffescript][Coffeescript homepage] - JavaScript in a candy coating. Used by default as of [Rails][Rails] 3.1 and used in this project's views.
 * [Gem Bundler][Bundler homepage] - Gem dependency management tool used by this project.
-* [The Computer Poker Research Group][CPRG homepage]
-* [Git][Git homepage] - Version control system used by this project.
 * [GitHub][GitHub homepage] - Host for this project's code.
+* [Git][Git homepage] - Version control system used by this project.
 * [God process monitoring][God homepage] - Used to manage background processes in production.
 * [Haml][Haml] - The template language used by this project's views.
 * [Markdown][Markdown] - The formatting syntax used to write most of this project's non-code documentation.
-* [RDoc][RDoc] - The formatting syntax used to write some of this project's non-code documentation, when [Markdown][Markdown] is not enough.
-* [YARD][YARD] - The documentation tool used by this project, which also defines tags used by in-code documentation.
 * [MongoDB][MongoDB homepage] - The database back-end for this project.
 * [Phusion Passenger][Phusion Passenger homepage] - Enables integration between [_Rails_][Rails] and [_Apache_][Apache homepage] in production.
-* [Ruby on Rails][Rails] - Web application framework used by this project.
-* [Railscasts][Railscasts] - Ruby on Rails video tutorials.
 * [Programming Ruby][Programming Ruby] - a tutorial on Ruby programming.
-* [RubyDoc.info][RubyDoc.info] - Documentation hosting site used by this project.
-* [Rake][Rake] - Ruby build program.
-* [The Ruby Programming Language][Ruby] - The foundational language of this project.
+* [RDoc][RDoc] - The formatting syntax used to write some of this project's non-code documentation, when [Markdown][Markdown] is not enough.
 * [RVM][RVM homepage] - Ruby installation and version manager.
-* [SASS][SASS] - Styling language extension of CSS used by this project.
+* [Railscasts][Railscasts] - Ruby on Rails video tutorials.
+* [Rake][Rake] - Ruby build program.
+* [Ruby on Rails][Rails] - Web application framework used by this project.
+* [RubyDoc.info][RubyDoc.info] - Documentation hosting site used by this project.
+* [SASS][SASS] - Styling language extension of CSS used by default as of [Rails][Rails] 3.1 and is used in this project.
 * [Stalker gem][Stalker homepage] - Ruby [_Beanstalkd_][Beanstalkd homepage] interface.
-* [University of Alberta][UAlberta homepage] - Host institution to the [Computer Poker Research Group][CPRG homepage].
+* [The Apache Project][Apache homepage] - The production web server used by this project.
+* [The Computer Poker Research Group][CPRG homepage]
+* [The Ruby Programming Language][Ruby] - The foundational language of this project.
 * [UAlberta hosted GUI client][UAlberta hosted GUI client] - A running deployment of this project that allows users to compete against some of the [Computer Poker Research Group's][CPRG homepage] recent agents.
+* [University of Alberta][UAlberta homepage] - Host institution to the [Computer Poker Research Group][CPRG homepage].
+* [YARD][YARD] - The documentation tool used by this project, which also defines tags used by in-code documentation.
 
 <!---
     Link references
@@ -149,6 +150,7 @@ Further resources
 [Beanstalkd homepage]: http://kr.github.com/beanstalkd/
 [Bundler homepage]: http://gembundler.com/
 [CPRG homepage]: http://poker.cs.ualberta.ca/
+[Coffeescript homepage]: http://coffeescript.org/
 [Git homepage]: http://git-scm.com/
 [Git setup]: https://help.github.com/articles/set-up-git#platform-all
 [GitHub homepage]: https://github.com
