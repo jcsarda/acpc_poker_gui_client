@@ -100,6 +100,15 @@ For execution details, run
 
 For more information, see this [tutorial][Rails generators tutorial] on [_Rails_][Rails] generators.
 
+## Contributing
+
+See the [issue tracker](https://github.com/dmorrill10/acpc_poker_gui_client/issues?state=open) for currently known issues, or to log new ones.
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
 
 Copyright
 ---------
