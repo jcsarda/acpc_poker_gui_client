@@ -22,6 +22,8 @@ Much of this application's functionality comes from component gems that began as
 
 Prerequisites
 ----------------
+
+* A compatible *\*NIX*-based operating system. Has been successfully installed on *Ubuntu 10.04.4 LTS*, *11.04*, *12.04*, and *Mac OS X Lion*. *Windows* is not supported (in this case, it is recommended to run a compatible operating system as a virtual machine in [VMWare Player](http://www.vmware.com/products/player/) or [VirtualBox](https://www.virtualbox.org/).
 * Ruby 1.9.3 - This can be installed in different ways, but a good choice is [RVM][RVM homepage]. Or you can follow these [instructions][Ruby downloads] to install via a different method.
 * Git - While this should only be required if you want to install Ruby via [RVM][RVM homepage], installing Git also makes working with this repository easier, so it is recommended. Follow these [instructions][Git setup] to do so.
 * [Bundler][Bundler homepage] - Bundler is a Ruby gem that manages a project's gem dependencies. It requires zlib, which can be installed through [RVM][RVM homepage] by running
